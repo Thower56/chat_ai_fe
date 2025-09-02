@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out-tsc/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Angular specific
+.angular/
+
+# Yarn
+.yarn/
+.yarnrc
+
+# Coverage
+coverage/
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*.swp
+
+# Generated files
+src/**/*.js
+src/**/*.js.map
