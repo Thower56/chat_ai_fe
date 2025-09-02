@@ -1,0 +1,13 @@
+<div class="chat-container">
+  <div class="messages">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender">
+      <span class="sender">{{ msg.sender === 'user' ? 'You' : 'Bot' }}:</span>
+      <span class="text">{{ msg.text }}</span>
+      <span class="timestamp">{{ msg.timestamp | date:'shortTime' }}</span>
+    </div>
+  </div>
+  <form (ngSubmit)="sendMessage()" class="input-row">
+    <input [(ngModel)]="newMessage" name="message" placeholder="Type your message..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+</div>
